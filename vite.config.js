@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// ✅ Add your repo name as base (case-sensitive)
 export default defineConfig({
   plugins: [react()],
+  base: '/Ai-Debugger/',
 })
