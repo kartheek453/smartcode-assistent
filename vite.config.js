@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/smartcode-assistent/',   // 👈 EXACT repo name
+  base: './',   // Important for production build to load assets correctly
 })
