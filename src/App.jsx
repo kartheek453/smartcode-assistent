@@ -135,7 +135,9 @@ Start coding now and explore all these features!`);
   const analyzeCode = async (code, error) => {
     try {
       const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
-      if (!apiKey || apiKey.trim() === '') {
+      // console.log(import.meta.env.VITE_GEMINI_API_KEY);
+
+      if (!apiKey) {
         throw new Error('Gemini API key is missing. Please add VITE_GEMINI_API_KEY to your .env file.');
       }
       
